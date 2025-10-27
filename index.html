@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="src/output.css">
+    <title>My Admin | Dashboard</title>
+</head>
+<body>
+    
+    <section class="p-8 bg-[#f8f9fc]">
+        <div class="flex items-center justify-between mb-4">
+            <p class="text-2xl">Dashboard</p>
+            <button class="bg-blue-600 text-white px-2 py-1 rounded font-medium cursor-pointer"><i class="fa-solid fa-download text-gray-300"></i> Generate Report</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+            <div class="bg-white border border-solid border-l-blue-600 shadow w-full px-4 py-6 rounded-lg">
+                <p class="text-xs font-bold text-blue-600 mb-1">EARNINGS (MONTH)</p>
+                <div class="flex items-center justify-between">
+                    <p class="mb-0 font-semibold text-gray-800">$40,000</p>
+                    <i class="fa-solid fa-calendar text-gray-300 text-2xl"></i>
+                </div>
+            </div>
+
+            <div class="bg-white border border-solid border-l-blue-600 shadow w-full px-4 py-6 rounded-lg">
+                <p class="text-xs font-bold text-blue-600 mb-1">EARNINGS (ANNUAL)</p>
+                <div class="flex items-center justify-between">
+                    <p class="mb-0 font-semibold text-gray-800">$215,000</p>
+                    <i class="fa-solid fa-dollar-sign text-gray-300 text-2xl"></i>
+                </div>
+            </div>
+
+            <div class="bg-white border border-solid border-l-cyan-600  shadow w-full px-4 py-6 rounded-lg">
+                <p class="text-xs font-bold text-cyan-600 mb-1">TASKS</p>
+                <div class="flex items-center justify-between">
+                    <div class="w-90 bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                    <div class="w-30 bg-cyan-600 h-2.5 rounded-full"></div>
+                    </div>
+                    <i class="fa-solid fa-list-check text-gray-300 text-2xl"></i>
+                </div>
+            </div>
+
+            <div class="bg-white border border-solid border-l-blue-600 shadow w-full px-4 py-6 rounded-lg">
+                <p class="text-xs font-bold text-blue-600 mb-1">PENDING REQUESTS</p>
+                <div class="flex items-center justify-between">
+                    <p class="mb-0 font-semibold text-gray-800">18</p>
+                    <i class="fa-solid fa-comment text-gray-300 text-2xl"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 mt-5">
+            <div class="bg-white rounded-md">
+                <p class="bg-[#ebebf3] px-3 py-3 font-medium text-[#4e73df]">Projects</p>
+
+                <div class="p-4">
+                <div class="flex items-center justify-between mt-5">
+                    <p class="text-sm font-medium text-gray-500">Server Migration</p>
+                    <p class="text-sm">20%</p>
+                </div>
+                <div class="w-full mt-2 bg-gray-200 rounded-[4px] h-3.5 dark:bg-gray-700">
+                <div class="w-20 bg-[#e74a3b] h-3.5 rounded-l-[4px]"></div>
+                </div>
+
+                <div class="flex items-center justify-between mt-5">
+                    <p class="text-sm font-medium text-gray-500">Sales Tracking</p>
+                    <p class="text-sm">40%</p>
+                </div>
+                <div class="w-full mt-2 bg-gray-200 rounded-[4px] h-3.5 dark:bg-gray-700">
+                <div class="w-40 bg-[#f6c23e] h-3.5 rounded-l-[4px]"></div>
+                </div>
+
+                <div class="flex items-center justify-between mt-5">
+                    <p class="text-sm font-medium text-gray-500">Customer Database</p>
+                    <p class="text-sm">60%</p>
+                </div>
+                <div class="w-full mt-2 bg-gray-200 rounded-[4px] h-3.5 dark:bg-gray-700">
+                <div class="w-60 bg-[#4e73df] h-3.5 rounded-l-[4px]"></div>
+                </div>
+
+                <div class="flex items-center justify-between mt-5">
+                    <p class="text-sm font-medium text-gray-500">Payout Details</p>
+                    <p class="text-sm">80%</p>
+                </div>
+                <div class="w-full mt-2 bg-gray-200 rounded-[4px] h-3.5 dark:bg-gray-700">
+                <div class="w-80 bg-[#36b9cc] h-3.5 rounded-l-[4px]"></div>
+                </div>
+
+                <div class="flex items-center justify-between mt-5">
+                    <p class="text-sm font-medium text-gray-500">Account Setup</p>
+                    <p class="text-sm">Complete!</p>
+                </div>
+                <div class="w-full mt-2 bg-gray-200 rounded-[4px] h-3.5 dark:bg-gray-700">
+                <div class="w-full bg-[#1cc88a] h-3.5 rounded-l-[4px] rounded-r-[4px]"></div>
+                </div>
+                </div>
+            </div>
+
+            <div class="mt-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 p-4">
+                    <div class="bg-[#4e73df] px-5 py-5 rounded-md">
+                        <p class="text-white">Primary</p>
+                        <p class="text-gray-400">#4e73df</p>
+                    </div>
+
+                    <div class="bg-[#36b9cc] px-5 py-5 rounded-md">
+                        <p class="text-white">Info</p>
+                        <p class="text-gray-400">#36b9cc</p>
+                    </div>
+
+                    <div class="bg-[#e74a3b] px-5 py-5 rounded-md">
+                        <p class="text-white">Danger</p>
+                        <p class="text-gray-400">#e74a3b</p>
+                    </div>
+
+                    <div class="bg-[#f8f9fc] px-5 py-5 rounded-md shadow-2xl">
+                        <p class="text-gray-400">Light</p>
+                        <p class="text-gray-400">#f8f9fc</p>
+                    </div>
+
+                    <div class="bg-[#1cc88a] px-5 py-5 rounded-md">
+                        <p class="text-white">Success</p>
+                        <p class="text-gray-400">#1cc88a</p>
+                    </div>
+
+                    <div class="bg-[#f6c23e] px-5 py-5 rounded-md">
+                        <p class="text-white">Warning</p>
+                        <p class="text-gray-400">#f6c23e</p>
+                    </div>
+
+                    <div class="bg-[#858796] px-5 py-5 rounded-md">
+                        <p class="text-white">Secondary</p>
+                        <p class="text-gray-400">#858796</p>
+                    </div>
+
+                    <div class="bg-[#5a5c69] px-5 py-5 rounded-md">
+                        <p class="text-white">Dark</p>
+                        <p class="text-gray-400">#5a5c69</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 shadow">
+                <div class="bg-white rounded-md">
+                    <p class="bg-[#ebebf3] px-3 py-3 font-medium text-[#4e73df]">Illustrations</p>
+
+                    <div class="p-4">
+                    <div class="">
+                        <img src="images/undraw_posting_photo.svg" alt="" class="w-90 h-90 mx-auto">
+                        <p>
+                            Add some quality, svg illustrations to your project courtesy of <a href="https://undraw.co/">unDraw</a>, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!
+                        </p>
+                        <a href="">Browse Illustrations on unDraw</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 shadow">
+                <div class="bg-white rounded-md">
+                    <p class="bg-[#ebebf3] px-3 py-3 font-medium text-[#4e73df]">Development Approach</p>
+
+                    <div class="p-4">
+                    <div>
+                        <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor page performance. Custom CSS classes are used to create custom components and custom utility classes.</p>
+                        <p class="mt-4">Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
