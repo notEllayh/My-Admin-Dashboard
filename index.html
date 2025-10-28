@@ -6,11 +6,78 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="style.css">
     <title>My Admin | Dashboard</title>
 </head>
 <body>
-    
-    <section class="p-8 bg-[#f8f9fc]">
+
+
+<!-- SideNav -->
+ <div class="flex flex-col  h-screen w-screen overflow-hidden">
+ <div class="bg-[#4e73df] p-4">
+    <aside class="sidebar fixed top-0 left-0 w-50 h-full text-white">
+        <div class="flex items-center">
+            <i class='bx  bx-smile' id="btn"></i> 
+            <h2>ERE ADMIN</h2>
+        </div>
+
+        <div class="flex items-center mt-4 mb-4 border border-gray-300 px-2 py-3">
+            <i class="fa-solid fa-gauge"></i>
+            <p class="font-medium text-sm">Dashboard</p>
+        </div>
+
+        <div>
+            <ul>
+                <p class="text-gray-400 font-medium text-sm mb-4">INTERFACE</p>
+                <li class="flex items-center cursor-pointer">
+                    <i class='bx  bx-cog text-gray-400'></i> 
+                    <p>Components</p>
+                    <i class="fa-solid fa-chevron-right text-gray-400"></i> 
+                </li>
+
+                <li class="flex items-center mt-6 cursor-pointer">
+                    <i class="fa-solid fa-wrench text-gray-400"></i>
+                    <p>Utilities</p>
+                    <i class="fa-solid fa-chevron-right text-gray-400"></i> 
+                </li>
+
+                <p class="text-gray-400 font-medium text-sm mt-4">ADDONS</p>
+                 <li class="flex items-center mt-4 cursor-pointer">
+                    <i class='bx  bx-folder-open text-gray-400'  ></i> 
+                    <p>Pages</p>
+                    <i class="fa-solid fa-chevron-right text-gray-400"></i> 
+                </li>
+
+                 <li class="flex items-center mt-5 cursor-pointer">
+                    <i class="fa-solid fa-chart-line text-gray-400"></i>
+                    <p>Charts</p>
+                </li>
+
+                 <li class="flex items-center mt-5 cursor-pointer">
+                    <i class='bx  bx-table text-gray-400'  ></i>  
+                    <p>Tables</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mt-5 w-fit mx-auto bg-red-600 p-2 rounded-full cursor-pointer">
+            <i class="fa-solid fa-chevron-left text-sm"></i>
+        </div>
+
+        <div class="mt-5">
+            <div class="bg-red-600 text-center p-4 rounded-lg mx-2">
+                <img src="images/undraw_rocket.svg" alt="" class="w-10 h-10 mx-auto">
+                <p class="text-sm"><span class="font-medium">SB Admin Pro</span> is packed with premium features, components, and more!</p>
+                <button class="">
+                    <a href="#">Upgrade to Pro!</a>
+                </button>
+            </div>
+        </div>
+    </aside>
+</div>
+
+    <div>
+    <section class="container p-8 bg-[#f8f9fc]">
         <div class="flex items-center justify-between mb-4">
             <p class="text-2xl">Dashboard</p>
             <button class="bg-blue-600 text-white px-2 py-1 rounded font-medium cursor-pointer"><i class="fa-solid fa-download text-gray-300"></i> Generate Report</button>
@@ -25,8 +92,8 @@
                 </div>
             </div>
 
-            <div class="bg-white border border-solid border-l-blue-600 shadow w-full px-4 py-6 rounded-lg">
-                <p class="text-xs font-bold text-blue-600 mb-1">EARNINGS (ANNUAL)</p>
+            <div class="bg-white border border-solid border-l- shadow w-full px-4 py-6 rounded-lg">
+                <p class="text-xs font-bold mb-1">EARNINGS (ANNUAL)</p>
                 <div class="flex items-center justify-between">
                     <p class="mb-0 font-semibold text-gray-800">$215,000</p>
                     <i class="fa-solid fa-dollar-sign text-gray-300 text-2xl"></i>
@@ -44,7 +111,7 @@
             </div>
 
             <div class="bg-white border border-solid border-l-blue-600 shadow w-full px-4 py-6 rounded-lg">
-                <p class="text-xs font-bold text-blue-600 mb-1">PENDING REQUESTS</p>
+                <p class="text-xs font-bold text- mb-1">PENDING REQUESTS</p>
                 <div class="flex items-center justify-between">
                     <p class="mb-0 font-semibold text-gray-800">18</p>
                     <i class="fa-solid fa-comment text-gray-300 text-2xl"></i>
@@ -173,5 +240,10 @@
             </div>
         </div>
     </section>
+    </div>
+    </div>
+
+
+    <script src="sidenav.js"></script>
 </body>
 </html>
